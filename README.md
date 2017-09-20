@@ -5,7 +5,13 @@
 
 ------------------------------------------------------------------------------------------
 
-## ESPECIFICAÇÕES
+## FUNCIONALIDADE
+  O programa GUARDA tem como propósito garantir a autênticação de um conjunto de arquivos
+ para uma determinada pasta.
+   
+------------------------------------------------------------------------------------------
+
+### ESPECIFICAÇÕES
 
  - Função Hash Criptográfica utilizada: MD5
  - Todas as Hashs são salvas em um arquivo oculto na pasta do projeto nomeado _hashs_
@@ -13,10 +19,14 @@
 
 ------------------------------------------------------------------------------------------
 
-### *Modo de uso:*
+#### *Modo de uso:*
 
 > Abra o Terminal (CTRL + ALT + T)
 
 >> Navegue até a pasta que se encontra o arquivo Guarda.py
 
->>> A linha de comando segue o seguinte padrão: python2.7 Guarda.py *<diretório do projeto>*
+>>> A linha de comando segue o seguinte padrão: python2.7 Guarda.py *<opção>* *<diretório do projeto>*
+
+>>> - "-i" Iniciar a guarda do diretório 
+>>> - "-t" faz o rastreio (tracking) do diretório
+>>> - "-x" desativa a guarda
