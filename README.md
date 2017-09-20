@@ -11,7 +11,7 @@
    
 ------------------------------------------------------------------------------------------
 
-### ESPECIFICAÇÕES
+## ESPECIFICAÇÕES
 
  - Função Hash Criptográfica utilizada: MD5
  - Todas as Hashs são salvas em um arquivo oculto na pasta do projeto nomeado _hashs_
@@ -19,7 +19,7 @@
 
 ------------------------------------------------------------------------------------------
 
-#### *Modo de uso:*
+## *Modo de uso:*
 
 > Abra o Terminal (CTRL + ALT + T)
 
