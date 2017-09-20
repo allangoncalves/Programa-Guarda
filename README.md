@@ -26,7 +26,7 @@
 >> Navegue até a pasta que se encontra o arquivo Guarda.py
 
 >>> A linha de comando segue o seguinte padrão: python2.7 Guarda.py *<opção>* *<diretório do projeto>*
-
+>>> *Opções*:
 >>> - "-i" Iniciar a guarda do diretório 
 >>> - "-t" faz o rastreio (tracking) do diretório
 >>> - "-x" desativa a guarda
