@@ -10,7 +10,7 @@ class Guarda():
 		self.changed = {}#alterações realizadas
 
 	def loadData(self):
-		for directory, folderName, file in os.walk("."):
+		for directory, folderName, file in os.walk(".", topdown=True):
 				for name in file:
 					if name != ".hashs" and name != ".changes":
 						fullName = os.path.join(directory, name).decode('unicode-escape')
