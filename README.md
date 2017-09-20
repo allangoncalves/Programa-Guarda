@@ -7,7 +7,7 @@
 
 ## FUNCIONALIDADE
   O programa GUARDA tem como propósito garantir a autênticação de um conjunto de arquivos
- para uma determinada pasta.
+ para uma determinada pasta utilizando calculo de HMAC.
    
 ------------------------------------------------------------------------------------------
 
