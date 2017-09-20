@@ -15,7 +15,7 @@ class Guarda():
 				for name in file:
 					if name != ".hashs" and name != ".changes":
 						fullName = os.path.join(directory, name).decode('unicode-escape')
-						self.files[fullName] = None
+						self.files[fullName] = 2
 		
 		if os.path.isfile(".hashs"):
 			with open(".hashs", "r") as input:
@@ -49,6 +49,8 @@ class Guarda():
 						self.changed[fullName] = 0
 					elif not self.early[fullName] == myhash:#se previamente foi provado que ele existe, então é necessário verificar se ele foi alterado
 						self.changed[fullName] = 1
+					else:
+						self.changed[fullName] = 2
 					self.files[fullName] = myhash
 					self.early[fullName] = myhash
 
@@ -63,7 +65,7 @@ class Guarda():
 				print("@@@ {} foi alterado. @@@".format(item))
 			self.changed[item] = 2 #2 representa arquivo analisado, util para as proximas verificações
 		for d in diff:
-			print("@@@ {} foi removido. @@@".format(d))
+			print("@@@ {} com hash {} foi removido. @@@".format(d[0], d[1]))
 
 
 if __name__ == '__main__':
